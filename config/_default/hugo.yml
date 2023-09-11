@@ -1,0 +1,61 @@
+baseURL: https://goodarzi.github.io/
+languageCode: fa-ir
+title: وب زرشک
+theme: PaperMod
+enableEmoji: true
+defaultContentLanguage: fa
+defaultContentLanguageInSubdir: false
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+languages:
+  fa:
+    languageDirection: rtl
+    languageCode: fa-IR
+    languageName: Persian
+    weight: 1
+
+menu:
+  main:
+    - name: آرشیو
+      url: archives/
+      weight: 5
+    - name: جستجو
+      url: search/
+      weight: 10
+
+params:
+    defaultTheme: auto # light | dark | auto
+    hideFooter: true
+    ShowShareButtons: false
+    ShowReadingTime: true
+    ShowBreadCrumbs: true
+    ShowPostNavLinks: true
+    ShowCodeCopyButtons: true
+
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+    cover:
+      responsiveImages: false
+      linkFullImages: false
+
+    homeInfoParams:
+        Title: "اینجا برای ..."
+        Content: >
+            به اشتراک گذاری ایده و راهکار
+            -   میتونید مطالب ویرایش کنید
+            
+    socialIcons:
+        - name: github
+          url: "https://github.com/goodarzi"
+        - name: Rss
+          url: "index.xml"
